@@ -71,9 +71,9 @@ Motherboard::Motherboard() :
                                   eeprom::AXIS_INVERSION);
 #endif
 #if STEPPER_COUNT > 2
-    stepper[2] = StepperInterface(Z_DIR_PIN,
-                                  Z_STEP_PIN,
-                                  Z_ENABLE_PIN,
+    stepper[2] = StepperInterface(B_DIR_PIN,
+                                  B_STEP_PIN,
+                                  B_ENABLE_PIN,
                                   Z_MAX_PIN,
                                   Z_MIN_PIN,
                                   eeprom::AXIS_INVERSION);
@@ -87,9 +87,9 @@ Motherboard::Motherboard() :
                                   eeprom::AXIS_INVERSION);
 #endif
 #if STEPPER_COUNT > 4
-    stepper[4] = StepperInterface(B_DIR_PIN,
-                                  B_STEP_PIN,
-                                  B_ENABLE_PIN,
+    stepper[4] = StepperInterface(Z_DIR_PIN,
+                                  Z_STEP_PIN,
+                                  Z_ENABLE_PIN,
                                   Pin(),
                                   Pin(),
                                   eeprom::AXIS_INVERSION);
