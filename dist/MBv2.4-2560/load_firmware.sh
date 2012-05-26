@@ -31,7 +31,7 @@ while true; do
 	CONF_FLAGS="-C $AD_CONF "
     fi
     # Upload firmware
-    $AVRDUDE $CONF_FLAGS -cstk500v2 -P/dev/ttyACM0 -b115200 -D -v -D -pm2560 -Uflash:w:${FWDIR}/${FIRMWARE}.hex:i 
+    $AVRDUDE $CONF_FLAGS -cstk500v2 -P/dev/tty.usbmodemfa131 -b115200 -D -v -D -pm2560 -Uflash:w:${FWDIR}/${FIRMWARE}.hex:i 
 done
 
 #!/bin/bash
